@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F38DEC1-7776-4B8E-AB92-C711D2E68D32}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Virus</RootNamespace>
+    <AssemblyName>Virus</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tb.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="diBuGongNeng\Frmgy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diBuGongNeng\Frmgy.Designer.cs">
+      <DependentUpon>Frmgy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diBuGongNeng\Frmsz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diBuGongNeng\Frmsz.Designer.cs">
+      <DependentUpon>Frmsz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongNeng\Frmsjdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongNeng\Frmsjdm.Designer.cs">
+      <DependentUpon>Frmsjdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongNeng\Frmdzcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongNeng\Frmdzcs.Designer.cs">
+      <DependentUpon>Frmdzcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongNeng\Frmrjcq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongNeng\Frmrjcq.Designer.cs">
+      <DependentUpon>Frmrjcq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmutw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmutw.Designer.cs">
+      <DependentUpon>Frmutw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongNeng\Frmcsz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongNeng\Frmcsz.Designer.cs">
+      <DependentUpon>Frmcsz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmzhu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmzhu.Designer.cs">
+      <DependentUpon>Frmzhu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gongNeng\Frmxycj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gongNeng\Frmxycj.Designer.cs">
+      <DependentUpon>Frmxycj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="diBuGongNeng\Frmpf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diBuGongNeng\Frmpf.Designer.cs">
+      <DependentUpon>Frmpf.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="diBuGongNeng\Frmgy.resx">
+      <DependentUpon>Frmgy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diBuGongNeng\Frmsz.resx">
+      <DependentUpon>Frmsz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongNeng\Frmsjdm.resx">
+      <DependentUpon>Frmsjdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongNeng\Frmdzcs.resx">
+      <DependentUpon>Frmdzcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongNeng\Frmrjcq.resx">
+      <DependentUpon>Frmrjcq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmutw.resx">
+      <DependentUpon>Frmutw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongNeng\Frmcsz.resx">
+      <DependentUpon>Frmcsz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmzhu.resx">
+      <DependentUpon>Frmzhu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gongNeng\Frmxycj.resx">
+      <DependentUpon>Frmxycj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diBuGongNeng\Frmpf.resx">
+      <DependentUpon>Frmpf.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JianBian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gongneng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gongneng2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gongneng-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gongneng-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gongneng-3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gongneng-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gongneng-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhuHuanFu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhuAnNiu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZhuSheZhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhuAnNiu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utwyes.png" />
+    <None Include="Resources\utwjinggao.png" />
+    <None Include="Resources\ChoJiang2.png" />
+    <None Include="Resources\ChoJiang.png" />
+    <None Include="Resources\GuanYuAnNiu.png" />
+    <None Include="Resources\choJiangAnNiu.png" />
+    <None Include="Resources\choJiangBianKuang.jpg" />
+    <None Include="Resources\zhuGuanYu.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\daZiCeShiwbk.png" />
+    <None Include="Resources\B1.png" />
+    <None Include="Resources\C1.png" />
+    <None Include="Resources\D1.png" />
+    <None Include="Resources\E1.png" />
+    <None Include="Resources\F1.png" />
+    <None Include="Resources\G1.png" />
+    <None Include="Resources\H1.png" />
+    <None Include="Resources\I1.png" />
+    <None Include="Resources\J1.png" />
+    <None Include="Resources\jianpan.png" />
+    <None Include="Resources\K1.png" />
+    <None Include="Resources\kongge1.png" />
+    <None Include="Resources\L1.png" />
+    <None Include="Resources\M1.png" />
+    <None Include="Resources\N1.png" />
+    <None Include="Resources\O1.png" />
+    <None Include="Resources\P1.png" />
+    <None Include="Resources\Q1.png" />
+    <None Include="Resources\R1.png" />
+    <None Include="Resources\S1.png" />
+    <None Include="Resources\T1.png" />
+    <None Include="Resources\U2.png" />
+    <None Include="Resources\V2.png" />
+    <None Include="Resources\W1.png" />
+    <None Include="Resources\X2.png" />
+    <None Include="Resources\Y2.png" />
+    <None Include="Resources\Z2.png" />
+    <None Include="Resources\Dazizanting.png" />
+    <None Include="Resources\Dazizanting2.png" />
+    <None Include="Resources\Dazichongxinkais.png" />
+    <None Include="Resources\Dazisjsd.png" />
+    <None Include="Resources\Dazishijian.png" />
+    <None Include="Resources\Dazisudu.png" />
+    <None Include="Resources\Mainbbhbg.png" />
+    <None Include="Resources\DianMingWei.jpg" />
+    <None Include="Resources\caiQuanXue.png" />
+    <None Include="Resources\caiQuanXue2.png" />
+    <None Include="Resources\caiQuanBudn.png" />
+    <None Include="Resources\caiQuanBuwj.png" />
+    <None Include="Resources\caiQuanJiandn.png" />
+    <None Include="Resources\caiQuanJianwj.png" />
+    <None Include="Resources\caiQuanShidn.png" />
+    <None Include="Resources\caiQuanShiwj.png" />
+    <None Include="Resources\caiQuanVS.png" />
+    <None Include="Resources\guanyu.jpg" />
+    <Content Include="tb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
